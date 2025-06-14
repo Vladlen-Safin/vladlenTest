@@ -1,0 +1,170 @@
+.full_white_bg {
+    background-color: var(--recipeDetails-full-white-bg);  /* Тёплый кремовый фон, можно заменить на чисто белый (#fff) */
+    width: 100%;
+    min-height: 100vh;          /* Занимает минимум 100% высоты окна браузера */
+}
+
+/* Контейнер всего компонента */
+.div_container {
+    background-color: var(--recipeDetails-container-bg-color);
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    min-height: 100vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--recipeDetails-container-bg-shd);
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовки */
+.div_container h1 {
+    color: var(--recipeDetails-container-h1-color); /* Яркий тёплый оранжевый */
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.div_container h3 {
+    color: var(--recipeDetails-container-h3-color); /* Глубокий терракотовый */
+    margin-top: 20px;
+}
+
+/* Обычный текст и параграфы */
+.div_container p {
+    color: var(--recipeDetails-container-p-color);
+    line-height: 1.6;
+}
+
+/* Список ингредиентов */
+.div_container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.div_container ul li {
+    padding: 5px 0;
+}
+
+/* Стили для шага рецепта */
+.main_step {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: var(--recipeDetails-container-steps-item-bg-color); /* Мягкий теплый фон */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--recipeDetails-container-bg-shd);
+}
+
+.step_container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.step_img {
+    flex-shrink: 0;
+}
+
+.step_img img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.step_desc {
+    flex: 1;
+    font-size: 1em;
+    color: var(--recipeDetails-container-steps-desc-color);
+    line-height: 1.5;
+}
+
+/* Стили для комментариев */
+.comment_container {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: var(--recipeDetails-container-steps-item-bg-color);
+    border-left: 4px solid var(--recipeDetails-container-h1-color);
+    border-radius: 4px;
+    width: 30%;
+}
+
+.comment_container h3 {
+    margin: 0 0 5px;
+    color: var(--recipeDetails-container-h1-color);
+}
+
+/* Ссылка на главную страницу */
+.details_recipe {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--recipeDetails-container-h1-color);
+    color: var(--recipeDetails-container-steps-item-bg-color);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.details_recipe:hover {
+    background-color: var(--recipeDetails-container-h3-color);
+}
+
+/* Стили для контейнера ингредиентов в админке */
+.items_container {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: var(--recipeDetails-container-bg-color);
+    border: 1px solid var(--recipeDetails-container-items-border);
+    border-radius: 6px;
+}
+
+.items_container select,
+.items_container input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid var(--recipeDetails-container-item-input);
+    border-radius: 4px;
+}
+
+.buttonrec {
+    margin:5px;
+    padding: 8px 12px;
+    background-color: var(--recipeDetails-container-h1-color);
+    color: var(--recipeDetails-container-steps-item-bg-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.buttonrec:hover {
+    background-color: var(--recipeDetails-container-btn-hover);
+}
+
+/* Стили для форм комментариев и редактирования рецепта */
+.div_container form {
+    margin: 20px 0;
+}
+
+.div_container form input[type="text"],
+.div_container form textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid var(--recipeDetails-container-item-input);
+    border-radius: 4px;
+}
+
+.div_container form button {
+    padding: 10px 20px;
+    background-color: var(--recipeDetails-container-h1-color);
+    color: var(--recipeDetails-container-steps-item-bg-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.div_container form button:hover {
+    background-color: var(--recipeDetails-container-h3-color);
+}

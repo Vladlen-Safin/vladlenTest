@@ -1,0 +1,346 @@
+:root {
+    --bg-color: #f4f4f9; /*цвет фона app.css*/
+    --bd--color: #fff;  /* цвет рамки app.css*/
+    --nav-a: #333;  /* какой-то цвет app.css*/
+    --nav-a-hover: #fff;  /* тоже белый цвет app.css*/
+    --nav-a-hover-bg:#4a90e2;  /* наведение на ссылку app.css*/
+
+    --admin-div-container: #FFF8E1;  /* цвет общего контейнера Admin.css*/
+    --admin-div-container-box-shd: rgba(0,0,0,0.1); /* цвет box-shadow Admin.css*/
+    --admin-orange: #FF7043; /* заголовок формы Admin.css*/
+    --admin-orange-focus: #FF5722; /* фокус на полях Admin.css*/
+    --admin-orange-focus-border: rgba(255, 87, 34, 0.5); /* тень при фокусе Admin.css*/
+    --admin-orange-button: #FFA726; /* стиль кнопок Admin.css*/
+    --admin-div-container-color: #fff; /* цвет текста Admin.css*/
+    --admin-div-container-butn-hover: #FB8C00; /* цвет кнопок при наведении Admin.css*/
+    --admin-div-container-butn-active: #E64A19; /* цвет кнопок при нажатии Admin.css*/
+    --admin-right-container-bg-color: rgba(255,2555,255,0.872); /* задний фон правого контейнреа Admin.css*/
+    --admin-right-container-input-border: #FFB74D; /* границы поля ввода Admin.css*/
+    --admin-right-container-h1-color: #E65100; /* цвет заголовка h1 Admin.css*/
+    --admin-right-container-button-submit: #FF6F20; /* цвет кнопки действия (submit) Admin.css*/
+    --admin-right-container-stock-div: #F1F1F1; /* Стиль для карточки товаров Admin.css*/
+
+    --cardDetails-container-div: rgb(247, 244, 158); /* Цвет фона cardDetails.css*/
+    --cardDetails-container-h2: #128a28; /* цвет заголовка h2 и кнопка добавления в корзину cardDetails.css*/
+    --cardDetails-container-p-color: #333; /* цвет текста color cardDetails.css*/
+    --cardDetails-container-delete-btn: #d9534f; /* цвет кнопки удаления cardDetails.css*/
+    --cardDetails-container-delete-btn-hover: #c9302c; /* цвет при наведнии на кнопку удалить cardDetails.css*/
+
+    --login-modal-overlay: rgba(0, 0, 0, 0.7); /* Полупрозрачная черная тень login.css*/
+    --login-modal-btn-color: #FF7043; /* цвет кнопоки login.css*/
+    --login-model-btn-focus: #FF5722; /* эффект фокуса login.css*/
+    --login-model-btn-focus-shd: rgba(255, 87, 34, 0.5); /* цвет тени при фокусе login*/
+
+    --payPage-body-bg-color: #f8f8f8; /* цвет ТЭГА тела payPage.css*/
+    --payPage-body-color: #333; /* цвет текста во всем теле payPage.css*/
+    --payPage-container-bg: rgba(255, 255, 255, 0.8); /* цвет фона контейнера оплаты payPage.css*/
+    --payPage-container-bg-shd: rgba(0, 0, 0, 0.1); /* цвети тени контейнера payPage.css*/
+    --payPage-container-delivery-bg-color: rgba(255, 255, 255, 0.9); /* цвет контейнера доставки payPage.css*/
+    --payPage-container-delivery-shd: rgba(0, 0, 0, 0.1); /* цвет тени payPage.css*/
+    --payPage-delivery-container-border: #ddd; /* блок внутри контейнера доставки payPage.css*/
+    --payPage-delivery-container-bg-color: #fff; /* цвет фона блока payPage.css*/
+    --payPage-cart-items-scrollbar-thumb-bg: #ccc; /*Scroll bar payPage*/
+    --payPage-cart-items-scrollbar-track-bg: #f8f8f8; /*Scroll bar payPage*/
+    --payPage-cutlery-btn: #ff6f20; /* цвет кнопок payPage.css*/
+    --payPage-pay-btn: #e65c1f; /* цвет кнопок при наведении payPage.css*/
+
+    --profile-modal-overlay-bg-color: rgba(0, 0, 0, 0.7); /* цвет фона модального окна profile.css*/
+    --profile-modal-container-element-border: black; /* цвет рамки у элемента profile.css*/
+    --profile-modal-container-bg-color: #fff; /* задний фон profile.css*/
+    --profile-modal-container-recipe-list-li-bg-color: #f9f9f9; /* цвет текста в перечеслении li profile.css*/
+    --profile-modal-container-box-shd: rgba(0, 0, 0, 0.1); /* цвет тени profile.css*/
+    --profile-modal-container-close-btn: #FF7043; /* цвет кнопки закрытия модального окна profile.css*/
+    --profile-modal-container-logout-btn: #FF5722; /* кнопка выйти profile.css*/
+    --profile-modal-container-username-color: #333; /* цвет текста profile.css*/
+    --profile-modal-container-information-input-border: #ccc; /* Рамка в поле инпут profile.css*/
+
+    --recipeDetails-full-white-bg: #fffaf0b1; /* белый цвет (кремовый) recipeDetails.css*/
+    --recipeDetails-container-bg-color: #fffaf0; /* цвет всего контейнера recipeDeatils.css*/
+    --recipeDetails-container-bg-shd: rgba(0, 0, 0, 0.1); /* цвет тени контейнера recipeDeatils.css*/
+    --recipeDetails-container-h1-color: #d35400; /* цвет текста заголовка h1 recipeDetails.css*/
+    --recipeDetails-container-h3-color: #c0392b; /* цвет текста заголовка h3 recipeDetails.css*/
+    --recipeDetails-container-p-color: #555; /* цвет текста recipeDetails.css*/
+    --recipeDetails-container-steps-desc-color: #333; /* цвет текста описания recipeDetails.css*/
+    --recipeDetails-container-steps-item-bg-color: #fff; /* стиль для шага рецепта recipeDetails.css*/
+    --recipeDetails-container-items-border: #f0e5d8; /* цвет границы ингредиентов recipeDetails.css*/
+    --recipeDetails-container-item-input: #ddd; /* цвет поля инпут recipeDetails.css*/
+    --recipeDetails-container-btn-hover: #e67e22; /* цвет кнопочек при наведении recipeDetails.css*/
+
+    --register-container-bg-color: #FFF8E1; /* цвет фона контейнера register.css*/
+    --register-form-bg-color: #fff; /* цвет формы регистрации register.css*/
+    --register-form-bg-shd: rgba(0, 0, 0, 0.1); /* цвет тени формы register.css*/
+    --register-form-title-color: #FF7043; /* цвет заговока формы register.css*/
+    --register-form-input-focus: #FF5722; /* цвет поля инпут фокус register.css*/
+    --register-form-input-focus-shd: rgba(255, 87, 34, 0.5); /* цвет поля инпут фокус тень register.css*/
+
+    --shorts-container-bg-color: #fff8e1c5; /* цвет основного контейнера shorts.css*/
+    --shorts-container-video-action-color: #222; /* цвет текста действий shorts.css*/
+    --shorts-container-comments-panel-bg-color: rgba(255, 255, 255, 0.95); /* цвет заднего фона комментариев shorts.css*/
+    --shorts-container-comments-panel-h1-color: #333; /* цвет текста в комментариях shorts.css*/
+    --shorts-container-comments-panel-item-h3-color: #222; /* цвет текста в комментариях shorts.css*/
+    --shorts-container-comments-panel-item-p-color: #555; /* цвет текста в комментариях shorts.css*/
+    --shorts-container-cooments-panel-input-border: #ccc; /* цвет границы в поле инпут shorts*/
+    --shorts-container-comments-panel-btn-bg-color: #f9cd8b; /* цвет кнопки в комментариях shorts.css*/
+    --shorts-container-comments-panel-btn-hover-bg-color: #ffb84d; /* цвет кнопки в комметариях при наведении shorts.css*/
+    --shorts-container-comments-panel-item-bg-color: #f1f1f1; /* цвет текста комментария shorts.css*/
+    --shorts-container-comment-item-btn-bg-color: #ff6b6b; /* цвет кнопки в комментарии shorts.css*/
+    --shorts-container-comment-itme-btn-color: #fff; /* цвет текста в кнопке shorts.css*/
+    --shorts-container-comment-item-btn-hover-bg-color: #e63946; /* цвет кнопки при наведении shorts.css*/
+    --shorts-container-video-desc-p-color: #0066cc; /* цвет тэгов видео shorts.css*/
+
+    --centralContainer-container-bg-color: rgba(247, 244, 158, 0.85); /* фон центрального контейнера centralContainer.css*/
+    --centralContainer-container-h1-h2-color: #333; /* цвет заголовков centralContainer.css*/
+    --centralContainer-container-recipe-card-bg: #fff; /* цвет фона у краточки рецепта centralContainer.css*/
+    --centralContainer-container-recipe-card-shd: rgba(0, 0, 0, 0.1); /* цвет тени у фона карточки рецепта centralContaienr.css*/
+    --centralContainer-container-card-hover-box-shd: rgba(0, 0, 0, 0.15); /* цвет тени у контейнера карточки продукта centralContainer.css*/
+    --centralContainer-container-card-h3-color: #128a28; /* цвет заголовка в карточке centralContainer.css*/
+    --centralContainer-container-card-p-color: #666; /* цвет текста в карточке centralContainer.css*/
+    --centralContainer-container-details-btn-hover: #0f6b1e; /* цвет кнопочки подробнее centralContainer.css*/
+    --centralContainer-modal-bg-color: rgba(0, 0, 0, 0.5); /* фон для модального окна centralContainer.css*/
+    --centralContainer-modal-content-box-shd: rgba(0, 0, 0, 0.3); /* цвет тени для модального окна centralContainer.css*/
+    --centralContainer-modal-close-btn-bg-color: red; /* цвет кнопки закрыть модальное окно centralContainer.css*/
+    --centralContainer-discount-badge-bg: linear-gradient(135deg, #ff4d4f, #ff7b72); /* даже не знаю что написать centralContainer.css*/
+
+    --editCard-h1-color: #128a28; /* цвет текста h3 editCard.css*/
+    --editCard-selet-border: #ccc; /* цвет границы выбранного элемента editCard.css*/
+    --editCard-save-btn-bg-color: white; /* цвет кнопки сохранения editCard.css*/
+    --editCard-save-btn-hover-bg-color: #0f6b20; /* цвет кнопки при наведении editCard.css*/
+
+    --header-bg-color: #ffffff; /* цвет ТЭГА всего header.css*/
+    --header-bg-shd: rgba(0, 0, 0, 0.1); /* цвет тени ТЭГА header.css*/
+    --header-logo-color: #128a28; /* цвет текста логотипа header.css*/
+    --header-contacts-color: #333; /* цвет текста в контактах header.css*/
+    --header-search-bar-border: #ccc; /* цвет границы поиска header.css*/
+    --header-search-bar-btn-bg-color: #ff6f20; /* цвет кнопочек header.css*/
+    --header-search-bar-btn-hover: #e65c1f; /* цвет кнопочки при наведении header.css*/
+    --header-seaech-bar-btn-color: white; /* цвет текста в кнопочке header.css*/
+    --header-login-bg-color: #e0e0e0; /* цвет текста header.css*/
+
+    --leftContainer-sidebar-bg-color: rgb(247, 244, 158); /* цвет контейнера leftContainer.css*/
+    --leftContainer-menu-button-bg-color: #128a28; /* фон меню кнопочек leftContainer.css*/
+    --leftContainer-menu-button-color: #fff; /*цвет текста в кнопочке leftContainer.css*/
+    --leftContainer-menu-button-hover-bg-color: #0f6b1e; /* цвет фона кнопочки при  наведении leftContainer.css */
+    --leftContainer-submenu-menu-btn-bg-color: #83c03f; /* цвет фона подменю leftContainer.css*/
+    --leftContainer-submenu-menu-btn-hover: #689F38; /* цвет фона кнопочки при наведении leftContainer.css*/
+
+    --rightContainer-sidebar-bg-color: rgba(247, 244, 158, 0.85); /* цвет контейнера rightContainer.css*/
+    --rightContainer-map-border: #ccc; /* цвет границы карты rightContainer.css*/
+    --rightContainer-map-box-shd: rgba(0, 0, 0, 0.1); /* цвет тени карты rightContainer.css*/
+    --rightContainer-sidebar-select-border: #128a28; /* цвет границы выбранного элемента rightContainer.css*/
+    --rightContainer-sidebar-bg-color: #fff8e1; /* цвет фона элемента rightContainer.css*/
+    --rightContainer-sidebar-color: #333; /* цвет текста элемента rightContainer.css*/
+    --rightContainer-sidebar-select-hover-bg-color: #0f6b1e; /* фон при наведении rightContainer.css*/
+    --rightContainer-confirm-btn-bg-color: #4CAF50; /* цвет кнопочки подвтерждеения rightContainer.css*/
+    --rightContainer-confirm-btn-color: white; /* цвет текста в кнопочке rightContainer.css*/
+    --rightContainer-confirm-btn-hover-bg-color: #45a049; /* цвет фона кнопочки при наведении rightContainer.css*/
+    --rightContainer-decline-btn-bg-color: #f44336; /* фон кнопочки отмены действия rightContainer.css*/
+    --rightContainer-decline-btn-hober-bg-color: #d32f2f; /* фон кнопочки отмены действия при наведении rightContainer.css*/
+
+}
+
+.dark-theme {
+    --bg-color: #121212; /* Глубокий тёмный фон */
+    --bd--color: #1e1e1e; /* Цвет рамки — чуть светлее фона */
+    --nav-a: #e0e0e0; /* Светлый текст навигации */
+    --nav-a-hover: #000; /* Чёрный текст при наведении */
+    --nav-a-hover-bg: #3b82f6; /* Акцентный синий (аналог #4a90e2) */
+
+    --admin-div-container: #1c1c1c; /* Тёмный контейнер */
+    --admin-div-container-box-shd: rgba(255, 255, 255, 0.05); /* Едва заметная светлая тень */
+    --admin-orange: #FF8A65; /* Мягкий оранжевый (аналог #FF7043) */
+    --admin-orange-focus: #FF7043; /* Яркий фокус */
+    --admin-orange-focus-border: rgba(255, 112, 67, 0.4); /* Полупрозрачная тень */
+    --admin-orange-button: #FFB74D; /* Тёплая кнопка */
+    --admin-div-container-color: #f5f5f5; /* Светлый текст */
+    --admin-div-container-butn-hover: #FFA726; /* Аналогичный оранжевый при наведении */
+    --admin-div-container-butn-active: #FF5722; /* Насыщенный оранжевый при нажатии */
+    --admin-right-container-bg-color: rgba(40, 40, 40, 0.9); /* Полупрозрачный тёмный фон */
+    --admin-right-container-input-border: #FFCC80; /* Светло-оранжевая граница поля */
+    --admin-right-container-h1-color: #FF9800; /* Яркий заголовок */
+    --admin-right-container-button-submit: #FF6F00; /* Акцентная кнопка */
+    --admin-right-container-stock-div: #2c2c2c; /* Фон карточек */
+
+    --cardDetails-container-div: rgb(40, 40, 40); /* Тёмный фон контейнера */
+    --cardDetails-container-h2: #34d058; /* Яркий зелёный (вместо #128a28) */
+    --cardDetails-container-p-color: #e0e0e0; /* Светлый текст */
+    --cardDetails-container-delete-btn: #f44336; /* Красная кнопка (ярче на тёмном фоне) */
+    --cardDetails-container-delete-btn-hover: #d32f2f; /* Более насыщенный при наведении */
+
+    --payPage-body-bg-color: #121212; /* Тёмный фон страницы */
+    --payPage-body-color: #e0e0e0; /* Светлый текст на фоне */
+    --payPage-container-bg: rgba(30, 30, 30, 0.9); /* Тёмный полупрозрачный контейнер */
+    --payPage-container-bg-shd: rgba(255, 255, 255, 0.05); /* Светлая тень для глубины */
+    --payPage-container-delivery-bg-color: rgba(40, 40, 40, 0.95); /* Тёмный контейнер доставки */
+    --payPage-container-delivery-shd: rgba(255, 255, 255, 0.05); /* Светлая тень */
+    --payPage-delivery-container-border: #444; /* Более тёмная граница */
+    --payPage-delivery-container-bg-color: #1e1e1e; /* Цвет фона блока */
+    --payPage-cart-items-scrollbar-thumb-bg: #666; /* Thumb скроллбара */
+    --payPage-cart-items-scrollbar-track-bg: #2a2a2a; /* Трек скроллбара */
+    --payPage-cutlery-btn: #ff8a50; /* Оранжевая кнопка с яркостью */
+    --payPage-pay-btn: #ff7043; /* Тёплый оранжевый для hover/submit */
+
+    --profile-modal-overlay-bg-color: rgba(0, 0, 0, 0.8); /* чуть темнее фон модального окна */
+    --profile-modal-container-element-border: #444; /* тёмная рамка у элемента */
+    --profile-modal-container-bg-color: #1e1e1e; /* тёмный фон модального контейнера */
+    --profile-modal-container-recipe-list-li-bg-color: #2a2a2a; /* фон пунктов списка */
+    --profile-modal-container-box-shd: rgba(255, 255, 255, 0.05); /* светлая тень */
+    --profile-modal-container-close-btn: #FF8A65; /* более яркий оттенок кнопки закрытия */
+    --profile-modal-container-logout-btn: #FF7043; /* тёплый оттенок кнопки выхода */
+    --profile-modal-container-username-color: #e0e0e0; /* светлый текст */
+    --profile-modal-container-information-input-border: #666; /* тёмная рамка инпута */
+
+    --recipeDetails-full-white-bg: #2a2a2a; /* тёмный полупрозрачный фон */
+    --recipeDetails-container-bg-color: #1e1e1e; /* фон всего контейнера */
+    --recipeDetails-container-bg-shd: rgba(255, 255, 255, 0.05); /* светлая тень */
+    --recipeDetails-container-h1-color: #ff8c00; /* яркий оранжевый заголовок h1 */
+    --recipeDetails-container-h3-color: #ff6347; /* мягкий тёплый красный для h3 */
+    --recipeDetails-container-p-color: #ccc; /* светло-серый текст */
+    --recipeDetails-container-steps-desc-color: #ddd; /* описание шага — чуть светлее */
+    --recipeDetails-container-steps-item-bg-color: #2e2e2e; /* шаг рецепта — контрастный фон */
+    --recipeDetails-container-items-border: #444; /* граница ингредиентов */
+    --recipeDetails-container-item-input: #555; /* фон/граница инпута */
+    --recipeDetails-container-btn-hover: #ffa500; /* ярко-оранжевый на hover */
+
+    --register-container-bg-color: #1e1e1e; /* тёмный фон контейнера */
+    --register-form-bg-color: #2a2a2a; /* тёмный фон формы */
+    --register-form-bg-shd: rgba(255, 255, 255, 0.05); /* светлая тень */
+    --register-form-title-color: #FF8C43; /* тёплый оранжевый заголовок */
+    --register-form-input-focus: #FF7043; /* яркий оранжевый фокус */
+    --register-form-input-focus-shd: rgba(255, 112, 67, 0.4); /* тёплая тень поля */
+
+    --shorts-container-bg-color: #2c2c2c; /* тёмный фон основного контейнера */
+    --shorts-container-video-action-color: #ddd; /* светлый текст действий */
+    --shorts-container-comments-panel-bg-color: rgba(40, 40, 40, 0.95); /* фон комментариев */
+    --shorts-container-comments-panel-h1-color: #f0f0f0; /* заголовок комментариев */
+    --shorts-container-comments-panel-item-h3-color: #e0e0e0; /* подзаголовок комментариев */
+    --shorts-container-comments-panel-item-p-color: #ccc; /* текст комментариев */
+    --shorts-container-cooments-panel-input-border: #555; /* граница инпутов */
+    --shorts-container-comments-panel-btn-bg-color: #a56c1d; /* кнопка комментариев */
+    --shorts-container-comments-panel-btn-hover-bg-color: #cc8720; /* кнопка при наведении */
+    --shorts-container-comments-panel-item-bg-color: #3a3a3a; /* фон отдельного комментария */
+    --shorts-container-comment-item-btn-bg-color: #ff6b6b; /* кнопка "удалить"/действие */
+    --shorts-container-comment-itme-btn-color: #fff; /* цвет текста кнопки */
+    --shorts-container-comment-item-btn-hover-bg-color: #c9302c; /* при наведении */
+    --shorts-container-video-desc-p-color: #66b2ff; /* цвет тэгов видео */
+
+    --centralContainer-container-bg-color: rgba(44, 44, 44, 0.85); /* тёмный фон центрального контейнера */
+    --centralContainer-container-h1-h2-color: #f0f0f0; /* светлый цвет заголовков */
+    --centralContainer-container-recipe-card-bg: #2a2a2a; /* тёмный фон карточки рецепта */
+    --centralContainer-container-recipe-card-shd: rgba(0, 0, 0, 0.4); /* усиленная тень карточки */
+    --centralContainer-container-card-hover-box-shd: rgba(0, 0, 0, 0.6); /* глубокая тень при наведении */
+    --centralContainer-container-card-h3-color: #4ddf63; /* яркий зелёный для заголовка */
+    --centralContainer-container-card-p-color: #ccc; /* светлый текст */
+    --centralContainer-container-details-btn-hover: #3acc5b; /* зелёный при наведении */
+    --centralContainer-modal-bg-color: rgba(0, 0, 0, 0.7); /* затемнённый фон модального окна */
+    --centralContainer-modal-content-box-shd: rgba(0, 0, 0, 0.6); /* усиленная тень */
+    --centralContainer-modal-close-btn-bg-color: #ff4d4d; /* адаптированный красный для кнопки закрытия */
+    --centralContainer-discount-badge-bg: linear-gradient(135deg, #ff6b6b, #ff9966); /* тёплый градиент, сохраняя стиль */
+
+    --editCard-h1-color: #4ddf63; /* светло-зелёный заголовок, адаптированный для тёмной темы */
+    --editCard-selet-border: #888; /* менее яркая граница селекта */
+    --editCard-save-btn-bg-color: #2a2a2a; /* тёмный фон кнопки сохранения */
+    --editCard-save-btn-hover-bg-color: #3acc5b; /* яркий зелёный при наведении */
+
+    --header-bg-color: #1e1e1e; /* тёмный фон хедера */
+    --header-bg-shd: rgba(0, 0, 0, 0.5); /* более глубокая тень */
+    --header-logo-color: #4ddf63; /* светло-зелёный для логотипа */
+    --header-contacts-color: #e0e0e0; /* светлый текст контактов */
+    --header-search-bar-border: #666; /* приглушённая граница */
+    --header-search-bar-btn-bg-color: #ff6f20; /* остаётся, контрастирует хорошо */
+    --header-search-bar-btn-hover: #e65c1f; /* тоже можно оставить */
+    --header-seaech-bar-btn-color: white; /* текст кнопки — без изменений */
+    --header-login-bg-color: #333; /* серый фон для кнопки/ссылки входа */
+
+    --leftContainer-sidebar-bg-color: #2c2c2c; /* тёмный фон боковой панели */
+    --leftContainer-menu-button-bg-color: #4ddf63; /* зелёный акцент (ярче на тёмном фоне) */
+    --leftContainer-menu-button-color: #fff; /* белый текст */
+    --leftContainer-menu-button-hover-bg-color: #38a84b; /* насыщенный зелёный при наведении */
+    --leftContainer-submenu-menu-btn-bg-color: #3b7d1b; /* тёмно-зелёный подменю */
+    --leftContainer-submenu-menu-btn-hover: #2e6d15; /* ещё темнее при наведении */
+
+    --rightContainer-sidebar-bg-color: #2c2c2c; /* тёмный фон боковой панели */
+    --rightContainer-map-border: #555; /* тёмная граница карты */
+    --rightContainer-map-box-shd: rgba(0, 0, 0, 0.5); /* более глубокая тень */
+    --rightContainer-sidebar-select-border: #4ddf63; /* зелёный акцент */
+    --rightContainer-sidebar-color: #f0f0f0; /* светлый текст */
+    --rightContainer-sidebar-select-hover-bg-color: #38a84b; /* насыщенный зелёный при наведении */
+    --rightContainer-confirm-btn-bg-color: #4ddf63; /* зелёная кнопка подтверждения */
+    --rightContainer-confirm-btn-color: white; /* белый текст */
+    --rightContainer-confirm-btn-hover-bg-color: #38a84b; /* тёмно-зелёный при наведении */
+    --rightContainer-decline-btn-bg-color: #ff6b6b; /* красный для отказа */
+    --rgihtContainer-decline-btn-hober-bg-color: #c62828; /* насыщенный красный при наведении */
+}
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f9; */
+    background-color: var(--bg-color);
+
+ /* Добавляем фон */
+ background-image: url('./images/1.jpg'); /* Путь к изображению */
+ background-size: 100% auto; /* Растягиваем картинку на всю ширину, высота авто */
+ background-position: top center; /* Центрируем изображение по горизонтали */
+ background-repeat: repeat-y; /* Повторяем фон только вниз */
+}
+
+/* Стили для Header */
+header {
+    background-color: var(--nav-a-hover-bg);
+    color: var(--bd--color);
+    /* padding: 25px; */
+    text-align: center;
+    /* font-size: 2em; */
+    font-weight: bold;
+}
+
+/* Стили для навигации */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--nav-a);
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: var(--nav-a-hover);
+    background-color: var(--nav-a-hover-bg);
+}
+
+/* Стиль для централизованной страницы */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.page {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--bd--color);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Стиль заголовка страницы */
+.page h1 {
+    font-size: 2em;
+    color: var(--nav-a-hover-bg);
+    margin-bottom: 20px;
+}
+
+

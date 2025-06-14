@@ -1,0 +1,168 @@
+/* Контейнер с прокруткой для всего центрального блока */
+.central-container {
+    padding: 20px;
+    background-color: var(--centralContainer-container-bg-color); /* Фон с прозрачностью */
+    border-radius: 8px;
+    text-align: center;           /* Фиксированная высота */
+    overflow-y: auto;           /* Вертикальная прокрутка */
+    scroll-behavior: smooth;    /* Плавная прокрутка */
+    height: 795px;
+}
+
+/* Скрываем полосу прокрутки для .central-container */
+.central-container::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.central-container {
+    -ms-overflow-style: none;   /* IE и Edge */
+    scrollbar-width: none;      /* Firefox */
+}
+
+/* Если требуется отдельная прокрутка для карточек с товарами, зададим фиксированную высоту */
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    max-height: 700px;         /* Фиксированная высота для области карточек */
+    overflow-y: auto;          /* Вертикальная прокрутка */
+    scroll-behavior: smooth;
+}
+
+/* Скрываем полосу прокрутки для контейнера карточек */
+.cards-list::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.cards-list {
+    -ms-overflow-style: none;   /* IE и Edge */
+    scrollbar-width: none;      /* Firefox */
+}
+  
+/* Заголовки */
+.central-container h1, .central-container h2 {
+    color: var(--centralContainer-container-h1-h2-color);
+    margin-bottom: 15px;
+}
+/* Карточки рецептов */
+.recipe-card {
+    height: auto;
+    width: 280px;
+    background: var(--centralContainer-container-recipe-card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px var(--centralContainer-container-recipe-card-shd);
+    transition: transform 0.3s;
+    text-align: left;
+}
+/* Карточки продуктов */
+.card {
+    height: auto;
+    width: 250px;
+    background: var(--centralContainer-container-recipe-card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px var(--centralContainer-container-recipe-card-shd);
+    transition: transform 0.3s;
+    text-align: left;
+    position: relative;
+}
+
+/* Анимация при наведении */
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 12px var(--centralContainer-container-card-hover-box-shd) 
+}
+
+/* Текст в карточке */
+.card h3 {
+    font-size: 1.3rem;
+    color: var(--centralContainer-container-card-h3-color); /* Зеленый цвет заголовков, как у меню */
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--centralContainer-container-card-p-color);
+    line-height: 1.4;
+}
+
+/* Кнопка "Подробнее" */
+.details-button {
+    display: block;
+    padding: 10px;
+    background-color: var(--centralContainer-container-card-h3-color);
+    color: var(--centralContainer-container-recipe-card-bg);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.details-button:hover {
+    background-color: var(--centralContainer-container-details-btn-hover);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /* Занимает всю ширину экрана */
+    /* width: 100%;
+    height: 100%; */
+    background: var(--centralContainer-modal-bg-color);
+    display: flex;
+    justify-content: flex-end; /* Размещаем модалку справа */
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--centralContainer-container-recipe-card-bg);
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 2px 10px var(--centralContainer-modal-content-box-shd);
+    overflow-y: auto;
+}
+
+.close-button {
+    background: var(--centralContainer-modal-close-btn-bg-color);
+    color: var(--centralContainer-container-recipe-card-bg);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+}
+.custom-image {
+    width: 90%;            /* Задаем ширину изображения */
+    height: auto;          /* Сохраняем пропорции изображения */
+    object-fit: cover;     /* Подгоняем изображение, чтобы оно заполнило контейнер */
+    border-radius: 10px;   /* Закругляем углы изображения */
+    display: block;        /* Изображение становится блочным элементом */
+    margin: 0 auto;        /* Центрируем изображение по горизонтали */
+  }
+
+    .discount-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--centralContainer-discount-badge-bg);
+    color: var(--centralContainer-container-recipe-card-bg);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover .discount-badge {
+    transform: scale(1.05);
+}

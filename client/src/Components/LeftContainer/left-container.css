@@ -1,0 +1,49 @@
+.sidebar {
+  padding: 20px;
+  padding-left: 10px;
+  border-radius: 8px;
+  background-color: var(--leftContainer-sidebar-bg-color);
+  height: 795px;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+.menu-button.recipe-button {
+  margin-bottom: 10px; /* Увеличенный отступ между кнопкой "Рецепты" и остальными */
+}
+.menu-button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--leftContainer-menu-button-bg-color);
+  color: var(--leftContainer-menu-button-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: var(--leftContainer-menu-button-hover-bg-color);
+}
+
+.submenu {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.submenu .menu-button {
+  background-color: var(--leftContainer-submenu-menu-btn-bg-color); /* Яркий киви-зелёный */
+  color: var(--leftContainer-menu-button-color);
+}
+
+.submenu .menu-button:hover {
+  background-color: var(--leftContainer-submenu-menu-btn-hover); /* Более тёмный оттенок киви при наведении */
+}

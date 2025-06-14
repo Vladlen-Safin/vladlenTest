@@ -1,0 +1,30 @@
+/* Родительский контейнер – устанавливаем фиксированную высоту и растяжение по высоте */
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-container {
+    width: 15%;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    height: auto; /* Высота подстраивается по содержимому */
+}
+
+.right-container {
+    width: 20%;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    height: auto; /* Высота подстраивается по содержимому */
+}
+
+.center-container {
+    flex-grow: 1; /* Центр занимает оставшееся пространство */
+    position: sticky;
+    padding: 10px;
+    height: 100%; /* Растягивается на всю высоту контейнера */
+    width: 65%;
+}

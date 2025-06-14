@@ -1,0 +1,222 @@
+/* Основные стили для header */
+header {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-between;
+    background-color: var(--header-bg-color);
+    padding: 10px 5%;
+    box-shadow: 0px 4px 8px var(--header-bg-shd);
+    font-family: Arial, sans-serif;
+}
+
+/* Логотип */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--header-logo-color);
+}
+
+.logo img {
+    margin-right: 10px;
+    max-height: 40px;
+}
+
+/* Контейнер кнопок */
+.buttoncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap: 20px;
+    flex-grow: 1;
+    flex-grow: 1;
+}
+
+/* Контакты */
+.contacts {
+    margin-right: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    gap: 15px;
+}
+
+.contacts .header-phone {
+    font-size: 18px;
+    color: var(--header-contacts-color);
+    font-weight: bold;
+}
+
+.contacts .header-phone:hover {
+    color: var(--header-logo-color);
+}
+
+/* Поисковая строка */
+.search-bar {
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--header-search-bar-border);
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: var(--header-logo-color);
+}
+
+.search-button {
+    background-color: var(--header-search-bar-btn-bg-color);
+    color: var(--header-seaech-bar-btn-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: var(--header-search-bar-btn-bg-color);
+}
+
+/* Кнопки входа и профиля */
+.login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Кнопки входа и профиля */
+.login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login .Enter {
+    background-color: var(--header-search-bar-btn-bg-color);
+    color: var(--header-seaech-bar-btn-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login .Enter:hover {
+    background-color: var(--header-login-bg-color);
+}
+/* Кнопка профиля */
+.login .Profile {
+    background-color: var(--header-search-bar-btn-bg-color);
+    color: var(--header-seaech-bar-btn-color);
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login .Profile:hover {
+    background-color: var(--header-login-bg-color);
+}
+
+.login .Profile svg {
+    font-size: 16px;
+}
+
+/* Кнопка Shorts */
+.shorts-icon {
+    background-color: var(--header-search-bar-btn-bg-color);
+    color: var(--header-seaech-bar-btn-color);
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shorts-icon:hover {
+    background-color: var(--header-login-bg-color);
+}
+
+.shorts-icon svg {
+    font-size: 16px;
+}
+
+/* Социальные кнопки */
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--header-search-bar-btn-bg-color);
+    color: var(--header-seaech-bar-btn-color);
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+    background-color: var(--header-login-bg-color);
+    transform: scale(1.1);
+}
+
+.socials a svg {
+    font-size: 16px;
+}
+
+.socials button {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--header-search-bar-btn-bg-color);
+    color: var(--header-seaech-bar-btn-color);
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.socials button:hover {
+    background-color: var(--header-login-bg-color);
+    transform: scale(1.1);
+}
+
+.socials button svg {
+    font-size: 16px;
+}

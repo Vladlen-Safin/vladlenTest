@@ -1,0 +1,44 @@
+/* Контейнер для всех диаграмм */
+.analiticblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 80vh; /* Ограничение высоты */
+    overflow-y: auto; /* Вертикальная прокрутка */
+    padding-right: 10px; /* Оставляем место под скроллбар */
+}
+
+/* Контейнер для сетки диаграмм */
+.analytics-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 15px;
+    width: 100%;
+    max-width: 900px; /* Ограничиваем ширину */
+    justify-content: center;
+}
+
+/* Карточка для каждой диаграммы */
+.chart-container {
+    background: var(--profile-modal-container-recipe-list-li-bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 380px; /* Уменьшаем размер */
+}
+
+/* Заголовок диаграммы */
+.chart-title {
+    margin-bottom: 10px;
+    font-size: 16px; /* Меньше размер шрифта */
+    font-weight: bold;
+}
+
+/* Уменьшаем размер графиков */
+.recharts-responsive-container {
+    width: 100% !important;
+    height: 250px !important; /* Уменьшаем высоту */
+}
+

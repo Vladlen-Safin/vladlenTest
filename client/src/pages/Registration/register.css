@@ -1,0 +1,80 @@
+/* Контейнер формы */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--register-container-bg-color);
+}
+
+/* Форма */
+.register-form {
+    background-color: var(--register-form-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--register-form-bg-shd);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Заголовок */
+.register-title {
+    color: var(--register-form-title-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Поля ввода */
+.register-input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid var(--register-form-title-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Эффект фокуса */
+.register-input:focus {
+    outline: none;
+    border-color: var(--register-form-input-focus);
+    box-shadow: 0 0 8px var(--register-form-input-focus-shd);
+}
+
+/* Кнопки */
+.register-button, .login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Кнопка регистрации */
+.register-button {
+    background-color: var(--register-form-title-color);
+    color: var(--register-form-bg-color);
+}
+
+.register-button:hover {
+    background-color: var(--register-form-input-focus);
+}
+
+/* Кнопка входа */
+.login-button {
+    background-color: var(--register-form-bg-color);
+    color: var(--register-form-title-color);
+    border: 2px solid var(--register-form-title-color);
+}
+
+.login-button:hover {
+    background-color: var(--register-form-title-color);
+    color: var(--register-form-bg-color);
+}
+

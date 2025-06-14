@@ -1,0 +1,233 @@
+body {
+    background-color: var(--payPage-body-bg-color);
+    font-family: Arial, sans-serif;
+    color: var(--payPage-body-color);
+    margin: 0;
+    padding: 0;
+}
+
+.pagebackground {
+    background: var(--payPage-container-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--payPage-container-bg-shd);
+    margin: 10px auto;
+    padding-top: 10px;
+    height: 820px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--payPage-body-color);
+}
+
+.paypage_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Выравнивание верхних краев контейнеров */
+    padding: 0px 20px 20px;
+    gap: 20px;
+}
+/* Контейнер доставки */
+.delivery_container {
+    width: 45%;
+    background-color: var(--payPage-container-delivery-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--payPage-container-delivery-shd);
+    
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: center; /* Выравниваем по центру */
+    gap: 15px; /* Равные отступы между элементами */
+}
+
+/* Блоки внутри контейнера доставки */
+.delivery_block_cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 90%; /* Делаем блоки чуть уже контейнера, чтобы был отступ */
+    padding: 12px;
+    border: 1px solid var(--payPage-delivery-container-border);
+    background-color: var(--payPage-delivery-container-bg-color);
+    color: var(--payPage-body-color);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid var(--payPage-body-color);
+    border-bottom: 2px solid var(--payPage-body-color);
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.arrow.up {
+    transform: rotate(-135deg);
+}
+
+.arrow.down {
+    transform: rotate(45deg);
+}
+
+.cart_items {
+    width: 94%;
+    border: 1px solid var(--payPage-delivery-container-border);
+    background-color: var(--payPage-delivery-container-bg-color);
+    border-radius: 5px;
+    height: 120px;
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Элементы идут сверху вниз */
+}
+
+/* Автоматическая прокрутка в самый низ при обновлении */
+.cart_items::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cart_items::-webkit-scrollbar-thumb {
+    background: var(--payPage-cart-items-scrollbar-thumb-bg);
+    border-radius: 3px;
+}
+
+.cart_items::-webkit-scrollbar-track {
+    background: var(--payPage-cart-items-scrollbar-track-bg);
+}
+
+
+
+/* Контейнер для списка рецептов */
+.recipes_container {
+    height: 600px;
+    width: 25%;
+    background-color: var(--payPage-container-delivery-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--payPage-container-delivery-shd);
+
+    max-height: 80vh; /* Ограничиваем высоту контейнера */
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Элементы идут сверху вниз */
+}
+
+/* Стилизация скроллбара */
+.recipes_container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.recipes_container::-webkit-scrollbar-thumb {
+    background: var(--payPage-cart-items-scrollbar-thumb-bg);
+    border-radius: 3px;
+}
+
+.recipes_container::-webkit-scrollbar-track {
+    background: var(--payPage-cart-items-scrollbar-track-bg);
+}
+
+.recipes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recipes-list li {
+    background-color: var(--payPage-delivery-container-bg-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--payPage-container-bg-shd);
+}
+.details-button {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    color: var(--payPage-delivery-container-bg-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.delivery_block_content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.content_left_item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Контейнер оплаты */
+.pay_container {
+    width: 30%;
+    background-color: var(--payPage-container-delivery-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--payPage-container-delivery-shd);
+    color: var(--payPage-body-color);
+    flex-direction: column; /* Выстраиваем элементы вертикально */
+    align-items: center; /* Выравниваем элементы по центру */
+    justify-content: center; /* Центрируем содержимое */
+    text-align: center; /* Центрируем текст */
+}
+
+.cutlery_controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.cutlery_count1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cutlery_count1 button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--payPage-cutlery-btn);
+    color: var(--payPage-delivery-container-bg-color);
+    border-radius: 5px;
+}
+
+.cutlery_count1 button:disabled {
+    background-color: var(--payPage-cart-items-scrollbar-thumb-bg);
+    cursor: not-allowed;
+}
+
+.cutlery_count1 span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.paybutt{
+    background-color: var(--payPage-cutlery-btn);
+    color: var(--payPage-delivery-container-bg-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.paybutt:hover{
+    background-color: var(--payPage-pay-btn);
+}

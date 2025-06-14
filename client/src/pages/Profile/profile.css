@@ -1,0 +1,238 @@
+/* Модальное окно */
+.profile-modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--profile-modal-overlay-bg-color); /* Полупрозрачная черная тень */
+    display: flex;
+    justify-content: flex-end; /* Выравниваем окно по правому краю */
+    align-items: center; /* Центрируем по вертикали */
+    z-index: 1000;
+}
+
+.profile-modal-container {
+    background-color: var(--profile-modal-container-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--profile-modal-container-box-shd);
+    width: 400px; /* Ширина модального окна */
+    height: 100%; /* На всю высоту экрана */
+    text-align: center;
+    position: relative;
+    margin-right: 20px; /* Отступ справа */
+    overflow-y: auto;
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE 10+ */
+}
+
+.profile-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-top: 8px;
+    background: none;
+    border: none;
+    color: var(--profile-modal-container-close-btn);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.profile-title {
+    color: var(--profile-modal-container-close-btn);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    margin-bottom: 20px;
+}
+
+.profile-username {
+    font-size: 18px;
+    color: var(--profile-modal-container-username-color);
+}
+
+/* Блок кнопок профиля */
+.profile-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-buttons .btn {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn {
+    background-color: var(--profile-modal-container-close-btn);
+    color: var(--profile-modal-container-bg-color);
+}
+.logout-btn:hover {
+    background-color: var(--profile-modal-container-logout-btn);
+}
+
+.delete-profile-btn {
+    background-color: var(--profile-modal-container-logout-btn);
+    color: var(--profile-modal-container-bg-color);
+}
+.delete-profile-btn:hover {
+    background-color: var(--profile-modal-container-close-btn);
+}
+
+.home-link {
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    background-color: var(--profile-modal-container-close-btn);
+    color: var(--profile-modal-container-bg-color);
+    border-radius: 4px;
+}
+.home-link:hover {
+    background-color: var(--profile-modal-container-logout-btn);
+}
+
+.admin-btn {
+    background-color: var(--profile-modal-container-logout-btn);
+    color: var(--profile-modal-container-bg-color);
+}
+.admin-btn:hover {
+    background-color: var(--profile-modal-container-close-btn);
+}
+
+/* Секция корзины */
+.update_div_container {
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: var(--profile-modal-container-close-btn);
+    margin-bottom: 20px;
+}
+
+.cart_container {
+    padding: 10px;
+    border: 1px solid var(--profile-modal-container-close-btn);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.delete-item-btn {
+    background-color: var(--profile-modal-container-close-btn);
+    color: var(--profile-modal-container-bg-color);
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delete-item-btn:hover {
+    background-color: var(--profile-modal-container-logout-btn);
+}
+
+.clear-cart-btn {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--profile-modal-container-logout-btn);
+    color: var(--profile-modal-container-bg-color);
+    cursor: pointer;
+}
+.clear-cart-btn:hover {
+    background-color: var(--profile-modal-container-close-btn);
+}
+
+/* Список рецептов */
+.recipes-list {
+    list-style: none;
+    padding: 0;
+}
+.recipes-list li {
+    background-color: var(--profile-modal-container-recipe-list-li-bg-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--profile-modal-container-close-btn);
+}
+.recipes-list h3 {
+    font-size: 18px;
+    color: var(--profile-modal-container-logout-btn);
+}
+.recipes-list p {
+    font-size: 14px;
+    color: var(--profile-modal-container-username-color);
+}
+
+.container_transaction {
+    border: 1px solid var(--profile-modal-container-element-border);
+    margin: 2%;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Новые классы */
+
+/* Стили для формы редактирования профиля (.information) */
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.information input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--profile-modal-container-information-input-border);
+    border-radius: 4px;
+}
+
+/* Стили для блока выбора оплаты (.transaction) */
+.transaction {
+    padding: 20px;
+    border: 1px solid var(--profile-modal-container-close-btn);
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: var(--profile-modal-container-bg-color);
+}
+
+.transactions-scroll-wrapper {
+    max-height: 250px;         /* Настраиваем высоту под дизайн */
+    overflow-y: scroll;        /* Включаем вертикальную прокрутку */
+    padding-right: 10px;
+  
+    /* Скрываем скроллбар */
+    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;  /* IE/Edge */
+  }
+  
+  .transactions-scroll-wrapper::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari */
+  }
+  
+/* Стили для кнопок с type="orange" */
+button[type="orange"] {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--profile-modal-container-logout-btn);
+    color: var(--profile-modal-container-bg-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+button[type="orange"]:hover {
+    background-color: var(--profile-modal-container-close-btn);
+}

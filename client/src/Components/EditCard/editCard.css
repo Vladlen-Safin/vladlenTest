@@ -1,0 +1,50 @@
+
+/* Заголовок */
+.edit-card h1 {
+    font-size: 1.8rem;
+    color: var(--editCard-h1-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Сетка для ввода данных (две колонки) */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Поля ввода */
+.form-grid input,
+.edit-card select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid var(--editCard-selet-border);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Выравнивание заголовков select */
+.edit-card h2 {
+    font-size: 1.2rem;
+    color: var(--editCard-h1-color);
+    margin-top: 15px;
+}
+
+/* Кнопка сохранения */
+.save-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--editCard-h1-color);
+    color: var(--editCard-save-btn-bg-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: var(--editCard-save-btn-hover-bg-color);
+}

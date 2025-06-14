@@ -1,0 +1,90 @@
+.right-sidebar {
+    padding: 20px;
+    border-radius: 8px;
+    background-color:  var(--rightContainer-sidebar-bg-color); /* Фон с прозрачностью */
+    position: relative; /* Убедимся, что не перекрывает модалку */
+    z-index: 900; /* Должен быть ниже, чем у модального окна */
+    display: flex;
+    flex-direction: column; /* Укладываем элементы в колонку */
+    align-items: center;
+  }
+  
+  .right-sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .right-sidebar p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .map {
+    width: 100%;                    /* Занимает всю доступную ширину */
+    height: 400px;                  /* Фиксированная высота для карты */
+    border: 1px solid var(--rightContainer-map-border);         /* Тонкая серая рамка */
+    border-radius: 8px;             /* Скругленные углы */
+    overflow: hidden;               /* Обрезаем содержимое за границами */
+    box-shadow: 0 4px 8px var(--rightContainer-map-box-shd); /* Легкая тень для эффекта подъема */
+    margin-top: 20px;               /* Отступ сверху для разделения с другими элементами */
+  }
+  
+  .right-sidebar select {
+    width: 100%; /* Растягиваем на всю ширину родительского контейнера */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--rightContainer-sidebar-select-border); /* Оранжевая рамка */
+    border-radius: 6px;
+    background-color: var(--rightContainer-sidebar-bg-color); /* Светлый фон */
+    color: var(--rightContainer-sidebar-color); /* Темный текст */
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.right-sidebar select:hover {
+    border-color: var(--rightContainer-sidebar-select-hover-bg-color); /* Темнее при наведении */
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем кнопки */
+  gap: 10px; /* Расстояние между кнопками */
+  margin-top: 15px;
+  width: 100%;
+}
+
+.confirm-button, .decline-button {
+  width: 100%; /* Делаем кнопки на всю ширину */
+    max-width: 250px; /* Ограничиваем максимальную ширину */
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.confirm-button {
+  background-color: var(--rightContainer-confirm-btn-bg-color); /* Зеленый */
+  color: var(--rightContainer-confirm-btn-color);
+}
+
+.confirm-button:hover {
+  background-color: var(--rightContainer-confirm-btn-hover-bg-color);
+  transform: scale(1.05);
+}
+
+.decline-button {
+  background-color: var(--rightContainer-decline-btn-bg-color); /* Красный */
+  color: var(--rightContainer-confirm-btn-color);
+}
+
+.decline-button:hover {
+  background-color: var(--rightContainer-decline-btn-hober-bg-color);
+  transform: scale(1.05);
+}
+.choosemagasine{
+margin-top: 20px;
+}

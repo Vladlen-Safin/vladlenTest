@@ -1,0 +1,146 @@
+.main_containe_admin {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px; /* Небольшой отступ сверху */
+}
+/* Контейнер для контента (левое меню) */
+.add_div_container {
+    /* background-color: #FFF8E1; Светлый оранжевый фон */
+    background-color: var(--admin-div-container);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--admin-div-container-box-shd);
+    width: 20%;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: flex-start; /* Элементы идут сверху */
+    gap: 10px; /* Отступ между элементами */
+    text-align: center;
+}
+
+/* Заголовок формы */
+.add_div_container h1 {
+    color: var(--admin-orange);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Поля ввода */
+.add_div_container input,
+.add_div_container select {
+    width: 100%;
+    max-width: 350px;
+    padding: 8px;
+    border: 2px solid var(--admin-orange);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+/* Фокус на полях */
+.add_div_container input:focus,
+.add_div_container select:focus {
+    outline: none;
+    border-color: var(--admin-orange-focus);
+    box-shadow: 0 0 8px var(--admin-orange-focus-border);
+}
+
+/* Стиль для кнопок (единый размер) */
+.add_div_container button {
+    background-color: var(--admin-orange-button);
+    color: var(--admin-div-container-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; /* Одинаковая ширина */
+    height: 40px; /* Одинаковая высота */
+}
+
+/* Эффекты при наведении */
+.add_div_container button:hover {
+    background-color: var(--admin-div-container-butn-hover);
+}
+
+/* Эффект при нажатии */
+.add_div_container button:active {
+    background-color: var(--admin-div-container-butn-active);
+}
+
+/* Контейнер блоков (правый контейнер) */
+.container_block {
+    /* width: 75%; */
+    height: 87vh;
+    background-color: var(--admin-right-container-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--admin-div-container-box-shd);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое */
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+}
+
+/* Поля ввода - уже и по центру */
+.container_block input,
+.container_block select {
+    width: 70%; /* Уменьшенная ширина */
+    padding: 8px;
+    border: 1px solid var(--admin-right-container-input-border);
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0; /* Увеличенный отступ между полями */
+}
+
+/* Заголовки в блоке */
+.container_block h1 {
+    color: var(--admin-right-container-h1-color);
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Основной контейнер */
+.main_containe_admin {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Контейнер с функционалом */
+.function_container {
+    width: 80%;
+}
+button[type="submit"] {
+    background-color: var(--admin-right-container-button-submit); /* Яркий оранжево-красный фон */
+    color: var(--bd--color); /* Белый текст */
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 15px; /* Отступ сверху */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--admin-div-container-butn-active); /* Темный оттенок при наведении */
+}
+
+/* Контейнер для списка акционных товаров */
+.stock_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Стили для карточек товаров */
+.stock_container div {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--admin-right-container-stock-div);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

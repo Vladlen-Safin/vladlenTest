@@ -1,0 +1,70 @@
+.card-details {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cardDetails-container-div); /* Цвет фона как у sidebar */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Заголовок */
+.card-details h2 {
+    font-size: 1.8rem;
+    color: var(--cardDetails-container-h2);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Текст */
+.card-details p {
+    font-size: 1rem;
+    color: var(--cardDetails-container-p-color);
+    margin-bottom: 8px;
+}
+
+/* Упорядоченный список */
+.card-details p strong {
+    color: var(--cardDetails-container-h2);
+}
+
+/* Кнопка удаления */
+.delete-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cardDetails-container-delete-btn); /* Красная кнопка */
+    color: var(--bd--color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+/* Кнопка добавления */
+.add-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cardDetails-container-h2); /* Красная кнопка */
+    color: var(--bd--color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+/* Анимация при наведении */
+.delete-button:hover {
+    background-color: var(--cardDetails-container-delete-btn-hover);
+}
+
+.custom-image {
+    width: 80%;                /* Устанавливаем ширину изображения на 80% от контейнера */
+    height: auto;              /* Сохраняем пропорции изображения */
+    object-fit: cover;         /* Подгоняем изображение по размеру контейнера, сохраняя пропорции */
+    border-radius: 10px;       /* Закругляем углы изображения */
+    display: block;            /* Изображение становится блочным элементом */
+    margin: 0 auto;            /* Центрируем изображение по горизонтали */
+}

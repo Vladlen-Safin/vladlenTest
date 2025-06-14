@@ -1,0 +1,101 @@
+/* Модальное окно */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /* Занимает всю ширину экрана */
+    background: var(--login-modal-overlay); /* Полупрозрачная черная тень */
+    display: flex;
+    justify-content: flex-end; /* Окно выравнивается справа */
+    align-items: stretch; /* Заполняет всю высоту */
+    z-index: 1000;
+}
+
+/* Контейнер модального окна */
+.modal-container {
+    background-color: var(--bd--color);
+    padding: 20px;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--login-modal-overlay);
+    width: 100%; /* На всю ширину контейнера */
+    max-width: 400px; /* Максимальная ширина */
+    height: 85%; /* На всю высоту страницы */
+    text-align: center;
+    position: relative;
+}
+
+
+/* Кнопка закрытия модального окна */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--login-modal-btn-color);
+    cursor: pointer;
+}
+
+/* Заголовок */
+.login-title {
+    color: var(--login-modal-btn-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Поля ввода */
+.login-input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid var(--login-modal-btn-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Эффект фокуса */
+.login-input:focus {
+    outline: none;
+    border-color: var(--login-model-btn-focus);
+    box-shadow: 0 0 8px var(--login-model-btn-focus-shd);
+}
+
+/* Кнопки */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button {
+    background-color: var(--login-modal-btn-color);
+    color: var(--bd--color);
+}
+
+.login-button:hover {
+    background-color: var(--login-model-btn-focus);
+}
+
+.register-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--login-model-btn-focus);
+    color: white;
+}
+
+.register-button:hover {
+    background-color: var(--login-modal-btn-color);
+}
