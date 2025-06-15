@@ -24,7 +24,7 @@ RUN npm install --force --omit=dev
 COPY api/ ./
 
 # Копируем сборку frontend из предыдущего этапа
-COPY --from=frontend /app/client/build ./api/public
+COPY --from=frontend /app/client/build ./public
 
 WORKDIR /app/api
 
