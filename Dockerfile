@@ -4,7 +4,7 @@ FROM node:18 AS frontend
 WORKDIR /app/client
 
 COPY client/package*.json ./
-RUN npm install
+RUN npm install --force
 
 COPY client/ ./
 RUN npm run build
@@ -18,7 +18,7 @@ WORKDIR /app
 # Копируем backend package.json
 COPY api/package*.json ./api/
 WORKDIR /app/api
-RUN npm install
+RUN npm install --force --omit=dev
 
 # Копируем backend код
 COPY api/ ./api
