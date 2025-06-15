@@ -6,7 +6,7 @@ dotenv.config();
 
 // Создаем хранилище GridFS
 const storage = new GridFsStorage({
-  url: process.env.MONGO,
+  url: process.env.MONGO || 'mongodb+srv://ismailovakamilla193:Love_anime19@clustervkr.nm7uq.mongodb.net/VKR',
   file: (req, file) => {
     console.log("FILE: ", file);
     
