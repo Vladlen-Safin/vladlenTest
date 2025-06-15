@@ -24,6 +24,8 @@ const analyticsRoute = require("./routes/analytics");
 const videoGroupsRoute = require("./routes/videoGroups");
 const promoCodeRoute = require("./routes/promoCode");
 
+const path = require('path');
+
 // Импорт Telegram-бота (запускается автоматически)
 require('./middleware/telegramBot');
 

@@ -21,7 +21,7 @@ WORKDIR /app/api
 RUN npm install --force --omit=dev
 
 # Копируем backend код
-COPY api/ ./api
+COPY api/ ./
 
 # Копируем сборку frontend из предыдущего этапа
 COPY --from=frontend /app/client/build ./api/public
