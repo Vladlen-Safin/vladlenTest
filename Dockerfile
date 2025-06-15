@@ -4,6 +4,7 @@ FROM node:18 AS frontend
 WORKDIR /app/client
 
 COPY client/package*.json ./
+COPY client/.env ./
 RUN npm install --force
 
 COPY client/ ./
