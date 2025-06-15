@@ -1,35 +1,33 @@
-# Базовый образ
-FROM node:18
+# ==== Этап 1: сборка frontend ====
+FROM node:18 AS frontend
 
-# Создаем рабочую директорию
-WORKDIR /app
-
-# Копируем package.json и package-lock.json из api
-COPY api/package*.json ./api/
-
-# Копируем package.json и package-lock.json из client
-COPY client/package*.json ./client/
-
-# Устанавливаем зависимости backend
-WORKDIR /app/api
-RUN npm install
-
-# Устанавливаем зависимости frontend
 WORKDIR /app/client
+
+COPY client/package*.json ./
 RUN npm install
 
-# Сборка фронтенда
+COPY client/ ./
 RUN npm run build
 
-# Возвращаемся в backend
+
+# ==== Этап 2: сборка backend + копирование фронтенда ====
+FROM node:18
+
+WORKDIR /app
+
+# Копируем backend package.json
+COPY api/package*.json ./api/
+WORKDIR /app/api
+RUN npm install
+
+# Копируем backend код
+COPY api/ ./api
+
+# Копируем сборку frontend из предыдущего этапа
+COPY --from=frontend /app/client/build ./api/public
+
 WORKDIR /app/api
 
-# Копируем весь код (после установки зависимостей — кеш сохранится)
-COPY api/ ./ 
-COPY --from=0 /app/client/build ./public
+EXPOSE 3010
 
-# Порт, который слушает ваше API
-EXPOSE 3000
-
-# Запуск backend-сервера
 CMD ["npm", "start"]
